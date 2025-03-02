@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using TaskManagerCourse.Api.Models.Data;
+
 namespace TaskManagerCourse.Api
 {
     public class Program
@@ -6,6 +9,9 @@ namespace TaskManagerCourse.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var configuration = builder.Configuration;
+            builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
 
             // Add services to the container.
 
