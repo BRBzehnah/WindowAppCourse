@@ -33,7 +33,7 @@ namespace TaskManagerCourse.Api.Models
         public User() { }
 
         public User(string fName, string lName, string email,string password,
-            UserStatus status = UserStatus.User,string phone = null, byte[] photo = null) 
+            UserStatus status = UserStatus.User,string phone = "none", byte[] photo = null) 
         {
             FirstName = fName;
             LastName = lName;

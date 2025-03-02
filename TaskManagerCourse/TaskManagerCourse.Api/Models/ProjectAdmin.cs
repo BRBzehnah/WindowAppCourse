@@ -14,7 +14,7 @@
 
         public ProjectAdmin(User user)
         {
-            User.Id = user.Id;
+            UserId = user.Id;
         }
     }
 }

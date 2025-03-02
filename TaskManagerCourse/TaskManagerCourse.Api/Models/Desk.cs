@@ -8,9 +8,9 @@
 
         public string Columns { get; set; }
 
-        public User? Admin { get; set; }
+        public User Admin { get; set; }
 
-        public int? AdminId { get; set; }
+        public int AdminId { get; set; }
 
         public Project Project  { get; set; }
 

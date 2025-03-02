@@ -9,8 +9,8 @@ namespace TaskManagerCourse.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            var configuration = builder.Configuration;
-            builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
 
 
             // Add services to the container.

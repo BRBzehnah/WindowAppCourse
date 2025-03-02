@@ -8,7 +8,7 @@
 
         public DateTime EndDate { get; set; }
 
-        public byte[]? File { get; set; }
+        public byte[] File { get; set; }
 
         public int DeskId { get; set; }
 

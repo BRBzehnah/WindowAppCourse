@@ -6,9 +6,9 @@ namespace TaskManagerCourse.Api.Models
     {
         public int Id { get; set; }
 
-        public int AdminId { get; set; }
+        public int? AdminId { get; set; }
 
-        public ProjectAdmin? Admin { get; set; }
+        public ProjectAdmin Admin { get; set; }
 
         public ProjectStatus Status { get; set; }
 
