@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TaskManagerCourse.Common.Models;
 
 namespace TaskManagerCourse.Api.Models.Data
 {
@@ -12,7 +13,7 @@ namespace TaskManagerCourse.Api.Models.Data
 
         public DbSet<Desk> Desks { get; set; }
 
-        public DbSet<TaskModel> Tasks { get; set; }
+        public DbSet<Task> Tasks { get; set; }
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {

@@ -1,6 +1,6 @@
 ﻿namespace TaskManagerCourse.Api.Models
 {
-    public class TaskModel:CommonObject
+    public class Task:CommonObject
     {
         public int Id { get; set; }
 

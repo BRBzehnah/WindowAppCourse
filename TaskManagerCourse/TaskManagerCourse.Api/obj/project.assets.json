@@ -1695,6 +1695,16 @@
             "rid": "win"
           }
         }
+      },
+      "TaskManagerCourse.Common.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TaskManagerCourse.Common.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskManagerCourse.Common.Models.dll": {}
+        }
       }
     }
   },
@@ -5159,33 +5169,39 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TaskManagerCourse.Common.Models/1.0.0": {
+      "type": "project",
+      "path": "../TaskManagerCourse.Common.Models/TaskManagerCourse.Common.Models.csproj",
+      "msbuildProject": "../TaskManagerCourse.Common.Models/TaskManagerCourse.Common.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "TaskManagerCourse.Common.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\obvin\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\obvin\\OneDrive\\Рабочий стол\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj",
       "projectName": "TaskManagerCourse.Api",
-      "projectPath": "C:\\Users\\obvin\\OneDrive\\Рабочий стол\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj",
-      "packagesPath": "C:\\Users\\obvin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\obvin\\OneDrive\\Рабочий стол\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\obvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5200,7 +5216,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Common.Models\\TaskManagerCourse.Common.Models.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Common.Models\\TaskManagerCourse.Common.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5213,7 +5233,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -5253,7 +5273,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
 ﻿using TaskManagerCourse.Api.Models;
+using TaskManagerCourse.Common.Models;
 
 namespace TaskManagerCourse.Api.Models
 {
@@ -26,7 +27,7 @@ namespace TaskManagerCourse.Api.Models
 
         public List<Desk> Desks { get; set; } = new List<Desk>();
 
-        public List<TaskModel> Tasks { get; set; } = new List<TaskModel>();
+        public List<Task> Tasks { get; set; } = new List<Task>();
 
         public UserStatus Status { get; set; }
 
@@ -43,6 +44,23 @@ namespace TaskManagerCourse.Api.Models
             Photo = photo;
             Status = status;
             RegistrationDate = DateTime.Now;  
+        }
+
+        public UserModel ToDto()
+        {
+            return new UserModel()
+            {
+                Id = this.Id, 
+                FirstName = this.FirstName, 
+                LastName = this.LastName,
+                Email = this.Email,
+                Password = this.Password,
+                Phone = this.Phone,
+                Photo = this.Photo,
+                Status = this.Status,
+                RegistrationDate = this.RegistrationDate,
+
+            };
         }
     }
 }

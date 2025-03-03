@@ -1,6 +1,4 @@
-﻿using System.Security.AccessControl;
-
-namespace TaskManagerCourse.Api.Models
+﻿namespace TaskManagerCourse.Api.Models
 {
     public class CommonObject
     {

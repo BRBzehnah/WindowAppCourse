@@ -16,6 +16,6 @@
 
         public int ProjectId { get; set; }
 
-        public List<TaskModel> Tasks { get; set; } = new List<TaskModel>();
+        public List<Task> Tasks { get; set; } = new List<Task>();
     }
 }
