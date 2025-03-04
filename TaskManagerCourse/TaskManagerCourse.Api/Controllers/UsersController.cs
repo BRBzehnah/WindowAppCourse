@@ -28,5 +28,11 @@ namespace TaskManagerCourse.Api.Controllers
             }
             return BadRequest();
         }
+
+        [HttpGet("test")]
+        public IActionResult TestApi()
+        {
+            return Ok("Hello world");
+        }
     }
 }
