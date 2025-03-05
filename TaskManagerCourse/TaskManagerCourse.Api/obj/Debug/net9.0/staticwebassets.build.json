@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "alFxF1Ov6la9AFnGgShzvMm9gRVsuL4w3FkMpwCgr70=",
+  "Source": "TaskManagerCourse.Api",
+  "BasePath": "_content/TaskManagerCourse.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
