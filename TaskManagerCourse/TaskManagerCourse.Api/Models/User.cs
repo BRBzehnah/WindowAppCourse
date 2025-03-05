@@ -46,6 +46,18 @@ namespace TaskManagerCourse.Api.Models
             RegistrationDate = DateTime.Now;  
         }
 
+        public User(UserModel model)
+        {
+                FirstName = model.FirstName; 
+                LastName = model.LastName;
+                Email = model.Email;
+                Password = model.Password;
+                Phone = model.Phone;
+                Photo = model.Photo;
+                Status = model.Status;
+                RegistrationDate = model.RegistrationDate;
+        }
+
         public UserModel ToDto()
         {
             return new UserModel()
@@ -58,7 +70,7 @@ namespace TaskManagerCourse.Api.Models
                 Phone = this.Phone,
                 Photo = this.Photo,
                 Status = this.Status,
-                RegistrationDate = this.RegistrationDate,
+                RegistrationDate = this.RegistrationDate
 
             };
         }

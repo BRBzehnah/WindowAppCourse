@@ -346,3 +346,5 @@ C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCours
 C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Api\obj\Debug\net8.0\TaskManagerCourse.Api.sourcelink.json
 C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Api\bin\Debug\net8.0\TaskManagerCourse.Common.Models.dll
 C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Api\bin\Debug\net8.0\TaskManagerCourse.Common.Models.pdb
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Api\bin\Debug\net8.0\TaskManagerCourse.Common.Models.dll
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Api\bin\Debug\net8.0\TaskManagerCourse.Common.Models.pdb

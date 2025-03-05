@@ -10,3 +10,15 @@ C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskMana
 C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\refint\TaskManagerCourse.Common.Models.dll
 C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.pdb
 C:\Users\user\Desktop\WindowAppCourse\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\ref\TaskManagerCourse.Common.Models.dll
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\bin\Debug\net8.0\TaskManagerCourse.Common.Models.deps.json
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\bin\Debug\net8.0\TaskManagerCourse.Common.Models.dll
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\bin\Debug\net8.0\TaskManagerCourse.Common.Models.pdb
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.AssemblyInfoInputs.cache
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.AssemblyInfo.cs
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.csproj.CoreCompileInputs.cache
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.sourcelink.json
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.dll
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\refint\TaskManagerCourse.Common.Models.dll
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\TaskManagerCourse.Common.Models.pdb
+C:\Users\obvin\OneDrive\Рабочий стол\WindowAppCourse\TaskManagerCourse\TaskManagerCourse.Common.Models\obj\Debug\net8.0\ref\TaskManagerCourse.Common.Models.dll

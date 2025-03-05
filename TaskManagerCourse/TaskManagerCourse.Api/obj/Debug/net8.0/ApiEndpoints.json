@@ -1,6 +1,26 @@
 [
   {
     "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TaskManagerCourse.Common.Models.UserModel, TaskManagerCourse.Common.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
     "Method": "CreateUser",
     "RelativePath": "api/Users/create",
     "HttpMethod": "POST",
@@ -17,12 +37,65 @@
   },
   {
     "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
+    "Method": "CreateMultipleUsers",
+    "RelativePath": "api/Users/create/several",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModels",
+        "Type": "System.Collections.Generic.List\u00601[[TaskManagerCourse.Common.Models.UserModel, TaskManagerCourse.Common.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
     "Method": "TestApi",
     "RelativePath": "api/Users/test",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManagerCourse.Api.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Users/update/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userModel",
+        "Type": "TaskManagerCourse.Common.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
