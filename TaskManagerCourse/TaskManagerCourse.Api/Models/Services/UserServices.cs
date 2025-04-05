@@ -1,11 +1,14 @@
-﻿using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text;
 using TaskManagerCourse.Api.Controllers;
 using TaskManagerCourse.Api.Models.Data;
+using TaskManagerCourse.Api.Obstractions;
+using TaskManagerCourse.Common.Models;
 
 namespace TaskManagerCourse.Api.Models.Services
 {
-    public class UserServices
+    public class UserServices:ICommonService<UserModel>
     {
         private readonly ApplicationContext _db;
         public UserServices(ApplicationContext db)
@@ -35,6 +38,7 @@ namespace TaskManagerCourse.Api.Models.Services
             var user = _db.Users.FirstOrDefault(u => u.Email == login && u.Password == pass);
             return user;
         }
+
         public ClaimsIdentity GetIdentity(string username, string password)
         {
             User currentUser = GetUser(username, password);
@@ -57,6 +61,77 @@ namespace TaskManagerCourse.Api.Models.Services
 
             // если пользователя не найдено
             return null;
+        }
+
+        private bool DoAction(Action action)
+        {
+            try
+            {
+                action.Invoke();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool Create(UserModel model)
+        {
+            return DoAction(delegate ()
+            {
+                User newUser = new User(model.FirstName, model.LastName, model.Email, model.Password,
+                    model.Status, model.Phone, model.Photo);
+                _db.Users.Add(newUser);
+                _db.SaveChanges();
+            });
+        }
+
+        public bool Update(UserModel model, int id)
+        {
+            User userForUpdate = _db.Users.FirstOrDefault(u => u.Id == id);
+            if (userForUpdate != null)
+            {
+                return DoAction(delegate ()
+            {
+                userForUpdate.FirstName = model.FirstName;
+                userForUpdate.LastName = model.LastName;
+                userForUpdate.Email = model.Email;
+                userForUpdate.Password = model.Password;
+                userForUpdate.Phone = model.Phone;
+                userForUpdate.Photo = model.Photo;
+                userForUpdate.Status = model.Status;
+
+                _db.Users.Update(userForUpdate);
+                _db.SaveChanges();
+            });
+            }
+            return false;
+
+        }
+
+        public bool Delete(int id)
+        {
+            User user = _db.Users.FirstOrDefault(u => u.Id == id);
+            if (user != null)
+            {
+                return DoAction(delegate ()
+                {
+                    _db.Users.Remove(user);
+                    _db.SaveChanges();
+                });
+            }
+            return false;
+        }
+
+        public bool CreateMultipleUsers(List<UserModel> userModels)
+        {
+            return DoAction(delegate ()
+            {
+                    var newUsers = userModels.Select(u => new User(u));
+                    _db.Users.AddRange(newUsers);
+                    _db.SaveChangesAsync();
+            });
         }
     }
 }

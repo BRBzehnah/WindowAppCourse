@@ -1,4 +1,4 @@
-﻿using TaskManagerCourse.Api.Models;
+﻿using TaskManagerCourse.Api.Obstractions;
 
 namespace TaskManagerCourse.Api.Models
 {

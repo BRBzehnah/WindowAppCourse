@@ -1,4 +1,4 @@
-﻿namespace TaskManagerCourse.Api.Models
+﻿namespace TaskManagerCourse.Api.Obstractions
 {
     public class CommonObject
     {
