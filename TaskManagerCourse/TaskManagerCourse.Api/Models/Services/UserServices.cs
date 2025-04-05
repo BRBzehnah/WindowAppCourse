@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.Text;
+using TaskManagerCourse.Api.Abstractions;
 using TaskManagerCourse.Api.Controllers;
 using TaskManagerCourse.Api.Models.Data;
 using TaskManagerCourse.Api.Obstractions;
@@ -8,7 +9,7 @@ using TaskManagerCourse.Common.Models;
 
 namespace TaskManagerCourse.Api.Models.Services
 {
-    public class UserServices:ICommonService<UserModel>
+    public class UserServices : AbsrtactServices, ICommonService<UserModel>
     {
         private readonly ApplicationContext _db;
         public UserServices(ApplicationContext db)
@@ -39,6 +40,12 @@ namespace TaskManagerCourse.Api.Models.Services
             return user;
         }
 
+        public User GetUser(string login)
+        {
+            var user = _db.Users.FirstOrDefault(u => u.Email == login);
+            return user;
+        }
+
         public ClaimsIdentity GetIdentity(string username, string password)
         {
             User currentUser = GetUser(username, password);
@@ -61,19 +68,6 @@ namespace TaskManagerCourse.Api.Models.Services
 
             // если пользователя не найдено
             return null;
-        }
-
-        private bool DoAction(Action action)
-        {
-            try
-            {
-                action.Invoke();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
         }
 
         public bool Create(UserModel model)
