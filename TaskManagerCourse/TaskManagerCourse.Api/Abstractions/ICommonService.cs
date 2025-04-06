@@ -8,5 +8,6 @@
 
         bool Delete(int id);
 
+        T Get(int id);
     }
 }

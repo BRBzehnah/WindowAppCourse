@@ -13,22 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|c:\\users\\user\\desktop\\windowappcourse\\windowappcourse\\taskmanagercourse\\taskmanagercourse.api\\models\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|solutionrelative:taskmanagercourse.api\\models\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|c:\\users\\user\\desktop\\windowappcourse\\windowappcourse\\taskmanagercourse\\taskmanagercourse.api\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|solutionrelative:taskmanagercourse.api\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|c:\\users\\user\\desktop\\windowappcourse\\windowappcourse\\taskmanagercourse\\taskmanagercourse.api\\abstractions\\commonobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|solutionrelative:taskmanagercourse.api\\abstractions\\commonobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3644047B-9EAE-43FC-97DB-F571ACE96591}|TaskManagerCourse.Common.Models\\TaskManagerCourse.Common.Models.csproj|c:\\users\\user\\desktop\\windowappcourse\\windowappcourse\\taskmanagercourse\\taskmanagercourse.common.models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3644047B-9EAE-43FC-97DB-F571ACE96591}|TaskManagerCourse.Common.Models\\TaskManagerCourse.Common.Models.csproj|solutionrelative:taskmanagercourse.common.models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|c:\\users\\user\\desktop\\windowappcourse\\windowappcourse\\taskmanagercourse\\taskmanagercourse.api\\abstractions\\absrtactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12E632E0-D895-4CDA-BD88-39EDF7A67850}|TaskManagerCourse.Api\\TaskManagerCourse.Api.csproj|solutionrelative:taskmanagercourse.api\\abstractions\\absrtactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +22,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectServices.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
+              "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
+              "RelativeToolTip": "TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAGMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T09:05:36.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,35 +49,9 @@
               "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Controllers\\ProjectsController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Controllers\\ProjectsController.cs",
               "RelativeToolTip": "TaskManagerCourse.Api\\Controllers\\ProjectsController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T12:15:07.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommonObject.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Abstractions\\CommonObject.cs",
-              "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Abstractions\\CommonObject.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Abstractions\\CommonObject.cs",
-              "RelativeToolTip": "TaskManagerCourse.Api\\Abstractions\\CommonObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:59:02.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Project.cs",
-              "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Models\\Project.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Project.cs",
-              "RelativeToolTip": "TaskManagerCourse.Api\\Models\\Project.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:57:11.081Z",
+              "WhenOpened": "2025-04-06T09:03:35.389Z",
               "EditorCaption": ""
             },
             {
@@ -87,52 +62,9 @@
               "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Models\\Services\\UserServices.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Services\\UserServices.cs",
               "RelativeToolTip": "TaskManagerCourse.Api\\Models\\Services\\UserServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:46:27.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AbsrtactServices.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Abstractions\\AbsrtactServices.cs",
-              "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Abstractions\\AbsrtactServices.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Abstractions\\AbsrtactServices.cs",
-              "RelativeToolTip": "TaskManagerCourse.Api\\Abstractions\\AbsrtactServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:48:40.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Common.Models\\TaskModel.cs",
-              "RelativeDocumentMoniker": "TaskManagerCourse.Common.Models\\TaskModel.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Common.Models\\TaskModel.cs",
-              "RelativeToolTip": "TaskManagerCourse.Common.Models\\TaskModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:41:24.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjectServices.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
-              "RelativeDocumentMoniker": "TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\WindowAppCourse\\WindowAppCourse\\TaskManagerCourse\\TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
-              "RelativeToolTip": "TaskManagerCourse.Api\\Models\\Services\\ProjectServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T11:44:49.291Z",
+              "WhenOpened": "2025-04-06T09:30:12.943Z",
               "EditorCaption": ""
             }
           ]

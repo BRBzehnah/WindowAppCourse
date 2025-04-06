@@ -27,7 +27,18 @@ namespace TaskManagerCourse.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<ProjectModel>> Get()
         {
-            return await _db.Projects.Select(p => p.ToDto()).ToListAsync();
+            var user = _us.GetUser(HttpContext.User.Identity.Name);
+            if (user.Status == UserStatus.Admin)
+                return await _ps.GetAll().ToListAsync();
+            else
+                return await _ps.GetByUserId(user.Id);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var project = _ps.Get(id);
+            return project == null ? NotFound() : Ok(project);
         }
 
         [HttpPost]
@@ -36,8 +47,10 @@ namespace TaskManagerCourse.Api.Controllers
             if (model != null)
             {
                 var user = _us.GetUser(HttpContext.User.Identity.Name);
-                if (user == null)
+                if (user != null)
                 {
+                    if (user.Status == UserStatus.Admin || user.Status == UserStatus.Editor)
+                    {
                     var admin = _db.ProjectAdmins.FirstOrDefault(a => a.User.Id == user.Id);
                     if (admin == null)
                     {
@@ -45,9 +58,12 @@ namespace TaskManagerCourse.Api.Controllers
                         _db.ProjectAdmins.Add(admin);
                     }
                     model.AdminId = admin.Id;
-                }
+
                     bool res = _ps.Create(model);
                     return res ? Ok() : BadRequest();
+                    }
+                }
+                return Unauthorized();
             }
             return BadRequest();
         }
@@ -57,17 +73,65 @@ namespace TaskManagerCourse.Api.Controllers
         {
             if (model != null)
             {
-                bool res = _ps.Update(model, id);
-                return res ? Ok() : BadRequest();
+                var user =_us.GetUser(HttpContext.User.Identity.Name);
+                if (user != null)
+                {
+                    if (user.Status == UserStatus.Admin || user.Status == UserStatus.Editor)
+                    {
+                        bool res = _ps.Update(model, id);
+                        return res ? Ok() : BadRequest();
+                    }
+                }
+                return Unauthorized();
             }
             return BadRequest();
-        }
+        } 
 
         [HttpDelete]
         public IActionResult Delete(int id)
         {
                 bool res = _ps.Delete(id);
                 return res ? Ok() : NotFound();
+        }
+
+        [HttpPatch("{id}/users")]
+        public IActionResult AddUsersToProject(int id, [FromBody] List<int> usersIds)
+        {
+            if (usersIds != null)
+            {
+                var user = _us.GetUser(HttpContext.User.Identity.Name);
+                if (user != null)
+                {
+                    if (user.Status == UserStatus.Admin || user.Status == UserStatus.Editor)
+                    {
+                        _ps.AddUsersToProject(id, usersIds);
+                        return Ok();
+                    }
+                }
+                return Unauthorized();
+
+            }
+            return BadRequest();
+        }
+        
+        [HttpPatch("{id}/users/remove/{userId}")]
+        public IActionResult RemoveUsersToProject(int id, [FromBody] List<int> usersIds)
+        {
+            if (usersIds != null)
+            {
+                var user = _us.GetUser(HttpContext.User.Identity.Name);
+                if (user != null)
+                {
+                    if (user.Status == UserStatus.Admin || user.Status == UserStatus.Editor)
+                    {
+                        _ps.RemoveUsersFromProject(id, usersIds);
+                        return Ok();
+                    }
+                }
+                return Unauthorized();
+
+            }
+            return BadRequest();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace TaskManagerCourse.Api.Controllers
         [HttpGet("test")]
         public IActionResult TestApi()
         {
-            return Ok("Hello world");
+            return Ok("Сервер запущен " + DateTime.Now);
         }
 
         [HttpPost]
